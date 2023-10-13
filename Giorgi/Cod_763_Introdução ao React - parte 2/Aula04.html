@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Introdução ao React parte - 2</title>
+	<link href="folha.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div class="fonte">
+
+		<h2>Aula 4 - Criando novos componentes</h2>
+
+		<p>Até agora nós aprendemos como criar componentes e variáveis dentro do arquivo <b>App.js</b>.</p>
+
+		<p>Nesta aula vamos aprender como criar novos arquivos <b>js</b> com seus próprios componentes e importá-los no arquivo App.js</p>
+
+		<h4>Criando o arquivo</h4>
+
+		<p>A primeira coisa a fazer é criar um arquivo <b>js</b> para nosso componente. Vamos chamá-lo de <b>Titulo.js</b>. Crie uma pasta chamada <b>componentes</b> dentro de <b>src</b> e crie o novo arquivo dentro dela.</p>
+
+		<div><img src="imagens/arquivo-titulo.jpg"></div>
+
+		<p>Agora digite o código abaixo no arquivo Titulo.js.</p>
+
+		<div><img src="imagens/componenteTitulo.jpg"></div>
+
+		<p>A próxima etapa agora é importar este componente no arquivo <b>App.js</b> para que possa ser renderizado.</p>
+
+		<div><img src="imagens/import-titulo.jpg"></div>
+
+		<p><blockquote><em>Atenção ao caminho do arquivo, utilize o <b>./</b> para encontrar o Titulo.js, se a pasta tiver alguma acentuação o VS Code pode sinalizar erro, mas o componente vai rodar normalmente.</em></blockquote></p>
+
+		<p> - Resultado</p>
+
+		<div><img src="imagens/resultado-import.jpg"></div>
+
+		<h4>Reutilizando um componente</h4>
+
+		<p>A importação de um componete pode ser feita em outro componente e não apenas no App.js. Porém a reinderização sempre acontece por padrão no App.js. Obviamente você programador pode alterar este padrão conforme sua necessidade.</p>
+
+		<p> No próximo exemplo vamos criar um novo arquivo e nele novo componente.</p>
+
+		<p>Crie um novo arquivo chamado <b>Texto.js</b> dentro da pasta componentes. E digite os códigos abaixo.</p>
+
+		<div><img src="imagens/arquivo-texto.jpg"></div>
+
+		<p><blockquote>Note que neste componente declaramos uma variável que pode receber valor de qualquer lugar e depois a exibimos.</blockquote></p>
+
+		<p>Agora ao invés de importarmos este componete no App.js vamos importá-lo no <b>Titulo.js</b></p>
+
+		<div><img src="imagens/import-textonotitulo.jpg"></div>
+
+		<p>Note que quando salvamos o projeto, ele exibe o conteúdo do componente Texto.js normalmente, pois o arquivo Titulo.js esta sendo renderizado pelo App.js</p>
+
+		<p>Resultado</p>
+
+		<div><img src="imagens/resultado-reutilizacao.jpg"></div>
+
+		<p>Desta forma podemos criar e importar componentes da forma que precisarmos.</p>
+
+		<p>A reutilização de componentes ocorre pois podemos chamar um componente quantas vezes necessário.</p>
+
+		<div><img src="imagens/reutilizando.jpg"></div>
+
+		<p>Resultado</p>
+
+		<div><img src="imagens/reutilizando-resultado.jpg"></div>
+
+
+		Espero que tenham gostado ! Agora já é possível testar os exemplos disponíveis no site oficial do React.
+		Segue o <a href="https://react.dev/learn" target="_blank">Link</a>
+
+	</div>
+
+</body>
+
+</html>

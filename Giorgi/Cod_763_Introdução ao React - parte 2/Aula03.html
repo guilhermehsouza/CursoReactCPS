@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Introdução ao React parte - 2</title>
+	<link href="folha.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div class="fonte">
+
+		<h2>Aula 3 - Mais exemplos e estruturas com React</h2>
+
+		<p>Uma das premissas do React é que você incorpore todo código HTML através do JSX.</p>
+
+		<p>Normalmente, em projetos relacionados ao front-end, mantemos o código em HTML, CSS e JavaScript em arquivos
+			separados. No React, porém, isso funciona de um modo um pouco diferente.</p>
+		<p>Nos projetos em React, não criamos arquivos em HTML separados, pois o JSX (JavaScript XML) nos permite
+			escrever uma combinação de HTML e JavaScript em um mesmo arquivo. No entanto, é possível separar seu CSS em
+			outro arquivo.</p>
+
+			<div><img src="imagens/jsx.jpg"></div>
+
+			<p>O JSX é muito prático, pois podemos executar qualquer código em JavaScript (lógica, funções, variáveis e assim por diante) dentro do HTML diretamente usando chaves { }, da seguinte maneira:</p>
+
+		
+			<div><img src="imagens/variavel-jsx.jpg"></div>
+
+			<p>Resultado</p>
+
+			<div><img src="imagens/resultado-jsx.jpg"></div>
+
+			<p><blockquote>Obs: <code>class</code> é um atributo muito usado em HTML, mas como JSX é renderizado como JavaScript e  <code>class </code> é uma palavra reservada em JavaScript, você não tem permissão para usá-lo em JSX. Use o atributo <code>className</code> em vez disso.</blockquote></p>
+			<p><blockquote>Os tipos de variáveis <code><em>var</em></code>, <code><em>let</em></code> e <code><em>const</em></code> seguem os padrões JavaScript.</blockquote></p>
+
+		<h3>Adicionando uma função soma</h3>
+
+		<div><img src="imagens/soma.jpg"></div>
+
+		<p>Resultado</p>
+
+		<div><img src="imagens/ressoma.jpg"></div>
+
+		<h3>Um componente chamando outro</h3>
+
+		<p>No exemplo abaixo são criados dois componetes e ambos são chamados no return do componente principal <b>App</b></p>
+
+		<div><img src="imagens/componentedecomponente.jpg"></div>
+
+		<p><blockquote><em>Note a forma como um componente é chamado: <b>< componente /></b>, diferente de uma variável <b>{variavel}</b></em></blockquote></p>
+
+		<p>Resultado</p>
+
+		<div><img src="imagens/resultado-comp.jpg"></div>
+
+
+
+	</div>
+
+</body>
+
+</html>

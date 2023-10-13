@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Introdução ao React parte - 2</title>
+  <link href="folha.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div class="fonte">
+
+    <h2>Aula 2 - Criando componentes</h2>
+
+    <p>Inicialmente iremos criar um componente simples. Para isso apague todo conteúdo do arquivo <b>App.js</b></p>
+
+    <p>Adicione o código abaixo:</p>
+
+    <div><img src="imagens/componente1.jpg"></div>
+
+    <p>
+      <blockquote><em>O código <b>function</b> é utilizado para criar um novo componete, e o conteúdo do <b>return</b> é
+          onde podemos adicionar a linguagem React JSX, no primeiro exemplo foi utilizado apenas um código HTML que será
+          exibido na tela.</em></blockquote>
+    </p>
+    <p>Note que ao salvar o arquivo, automaticamente o texto do H1 será exibido na página inicial.</p>
+
+    <div><img src="imagens/componente2.jpg"></div>
+
+
+    <h3>Segundo componente</h3>
+
+    <p>Neste segundo exemplo iremos criar uma variável simples e na sequência exibi-la usando o JSX.</p>
+
+    <p>
+      <blockquote><em>JSX é uma extensão da linguagem JavaScript que é usada pelo React para criar interfaces de
+          usuário. Ele permite que você misture código JavaScript com sintaxe de HTML, o que torna mais fácil escrever
+          componentes de interface de usuário em um único arquivo de código. Se você está gostando de aprender React é
+          essencial aprender JSX.</em></blockquote>
+    </p>
+
+    <div><img src="imagens/exemplo2.jpg"></div>
+
+    <h3> Estrutura do Componente</h3>
+
+    <p>Um componente é um bloco de código reutilizável e independente, que divide a interface do usuário em partes
+      menores.</p>
+    <p>Para conseguir usar um componente mais tarde, você precisa, primeiramente exportá-lo de modo a importá-lo em
+      outro lugar</p>
+
+    <p>Como pode ser notado no exemplo principal e nos dois exemplos que criamos é que a estrutura básica de componente
+      do React é com <em>function</em> e <em>return</em></p>
+
+    <div><img src="imagens/export-app.jpg"></div>
+
+    <p>Note que você pode separar o export default da função, como é feito no app.js original.</p>
+
+    <div><img src="imagens/export-fora.jpg"></div>
+
+    <p>Importando o componente</p>
+
+    <div><img src="imagens/import.jpg"></div>
+
+    <p>Desse modo, um componente funcional em React:</p>
+    <ul>
+      <li>é uma função em JavaScript/ES6</li>
+      <li>deve retornar um elemento em React (JSX)</li>
+      <li>sempre começa com letra maiúscula (convenção dos nomes)</li>
+      <li>aceita props como parâmetro, se necessário</li>
+    </ul>
+
+    <h2>Não esqueça !!!</h2>
+
+    <p>No projeto padrão o conteúdo do arquivo <b>App.js</b> é renderizado pelo <b>index.js</b> e seu resultado é
+      exibido pela <b>index.html</b> através da função <b>ReactDOM</b></p>
+
+    <p>No index.js</p>
+
+    <div><img src="imagens/root-index.jpg"></div>
+
+    <p>No public/index.html</p>
+
+    <div><img src="imagens/root-indexhtml.jpg"></div>
+
+
+
+    <p>IMPORTANTE - caso você feche o VS Code é preciso executar o comando <b>npm start</b> na pasta do projeto
+      novamente.</p>
+
+  </div>
+
+
+
+</body>
+
+</html>

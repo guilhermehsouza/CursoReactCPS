@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução ao React parte - 2</title>
+    <link href="folha.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="fonte">
+
+        <h2>Aula 1 - Criando e entendendo um novo Projeto</h2>
+
+
+        <p>Para iniciarmos nosso curso são necessários 3 Pré-requisitos.</p>
+
+        <ol>
+            <li>Ter feito o curso de Introdução ao React parte-1 ou já ter conhecimentos básicos em React.</li>
+            <li>Verificar a instalação do Node.js</li>
+            <li>Verificar se o npm e npx estão funcionando corretamente.</li>
+        </ol>
+
+        <p>Para isso execute os comandos no prompt ou terminal do VS Code conforme imagem abaixo.</p>
+
+        <div><img src="imagens/requisito.jpg"></div>
+
+        <P>Se tudo deu certo, então vamos criar um novo projeto. Para isso é importante que crie uma pasta onde o projeto será armazenado, no meu caso vou criar dentro da pasta dos arquivos deste curso.</P>
+
+        <p>Para criar um novo projeto execute o código: <b>npx create-react-app my-app-react</b> e aguarde alguns minutinhos.</p>
+
+        <div><img src="imagens/criandoprojeto.jpg"></div>
+
+        <p>Após criar o projeto, acesse a pasta my-app-react e execute o comando <b>npm start</b> , com isso seu navegador deve ser aberto com a página inicial do React.</p>
+
+        <div><img src="imagens/projeto-ok.jpg"></div>
+
+        <div><img src="imagens/pagina-inicial.jpg"></div>
+
+        <p>Note que será criada a pasta my-app-react.</p>
+
+        <div><img src="imagens/pasta.jpg"></div>
+
+        <h3>Relembrando a estrutura das pastas </h3>
+
+
+        <ul>
+			<li><strong><code>README.md</code></strong> é um arquivo em markdown que inclui muitas dicas úteis e links
+				que podem ajudar você em seu aprendizado no uso do Create React App.</li>
+			<li><code><strong>node_modules</strong></code> é uma pasta que inclui todo o código relacionado às
+				dependências que o Create React App instalou. Você dificilmente precisará entrar nessa pasta.</li>
+			<li><code><strong>package.json</strong></code> é o arquivo que gerencia as dependências da aplicação e o que
+				está incluído na pasta node_modules do projeto, além dos scripts de que precisamos para executar a nossa
+				aplicação.</li>
+			<li><code><strong>.gitignore</strong></code> é um arquivo usado para excluir os arquivos e pastas do
+				rastreamento do Git. Não precisamos incluir pastas grandes, como a pasta node_modules, por exemplo</li>
+			<li><code><strong>public</strong></code> é uma pasta que usaremos para armazenar nossos itens estáticos,
+				como as imagens, svgs e fontes da aplicação em React.</li>
+			<li><code><strong>src</strong></code> é a pasta que contém o código-fonte. É lá que todo nosso código
+				relacionado ao React estará e é nela que trabalharemos fundamentalmente na criação de nossa aplicação.
+			</li>
+		</ul>
+
+
+        <h3>A pasta src</h3>
+
+        <p>Esta pasta é onde os principais arquivos do React estão armazenados, vamos identifica-los.</p>
+
+        <p>- O arquivo <b>App.js</b> é o arquivo que contém o primeiro componente deste projeto, é onde serão feitos os nossos exemplos. </p>
+        <p>- O arquivo <b>index.js</b> é o arquivo que contém toda a estrutura do React, é ele quem renderiza o arquivo App.js e qualquer outro necessário, inclusive é nele que se encontra a função <b>ReactDOM</b>. Quando é executado o <b>npm start</b> este arquivo é chamado primeiro, ele renderiza o conteúdo do arquivo App.js e exibe seu conteúdo pelo arquivo <b>public/index.html</b>. Inicialmente são os três arquivos envolvidos na execução da página inicial do React.</p>
+
+        <p>Vamos visualizar o código destes arquivos</p>
+
+        <p>Arquivo <b>index.js</b></p>
+
+        <div><img src="imagens/indexjs2.jpg"></div>
+
+        <p><blockquote><em>Este arquivo faz a importação das dependências necessárias no inicio do arquivo e renderização do App.js. Nem todos os arquivos importados são necessários, os arquivos css e reportWebVitals podem ser removidos ou alterados se necessário. </em></blockquote></p>
+
+        <p>Arquivo <b>app.js</b></p>
+
+        <div><img src="imagens/app.sj.jpg"></div>
+
+        <p><blockquote><em>Este arquivo é onde por padrão é gerado o primeiro componente do projeto.</em></blockquote></p>
+
+        <p>Arquivo <b>public/index.html</b></p>
+
+        <div><img src="imagens/indexhtml.jpg"></div>
+
+        <p><blockquote><em>É o arquivo index padrão, ele recebe e exibe o resultado dos componetes React da página App.js.</em></blockquote></p>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

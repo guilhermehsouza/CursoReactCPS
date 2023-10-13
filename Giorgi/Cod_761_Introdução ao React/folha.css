@@ -1,0 +1,51 @@
+.fonte {
+	font-size: 18px;
+	color:#000; 
+	font-family: 'Arial';
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.comandos {
+	font-size: 18px;
+	color: #F00;
+	font-weight:bold;
+}
+
+.cor {
+	font-size: 18px;
+	color: #039;
+	font-weight:bold;
+}
+
+.padrao {
+	font-size: 18px;
+	color: #000;
+	text-align:justify;
+}
+
+a:link, a:visited{
+color:royalblue;
+font-weight:bold;
+}
+
+a:hover {
+color: #ff0000;
+font-weight:bold;
+
+}
+
+a:active{
+color: #0000ff;
+
+}
+
+
+
+
+
+
+
+
+
+
