@@ -1,17 +1,24 @@
-function Exemplo2({nome, paragrafo, cor}){
+import { useState } from "react"
+
+function Exemplo3({cor}){
+
+    const[texto, setTexto] = useState("Titulo Inicial");
+    const[inputText,setInputText] = useState("");
+
+    function clicou(){
+        setTexto(inputText)
+    }
 
     
-
     return (
         <div>
-            <h1 style={{color:cor}}>Oi, eu sou o {nome ? nome : "Fulano"}</h1>
-            {paragrafo ? 
-                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est porro mollitia quidem quisquam animi aperiam, unde, totam quibusdam esse dolorem error ex molestias dolorum voluptatem consequatur voluptate quasi, sunt atque.</p>
-                :
-                <p></p>
-            }
+            <h1 style={{color:cor}}>{texto}</h1>
+            <input type="text" value={inputText} onChange={(e) => {setInputText(e.target.value)}}/>
+            <button onClick={clicou}>Clique</button>
+            <button onClick={()=> {setTexto("Mudei via botão")}}>Mudar via botão</button>
+            
         </div>
     )
 }
 
-export default Exemplo2
+export default Exemplo3

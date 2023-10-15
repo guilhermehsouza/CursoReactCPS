@@ -1,4 +1,5 @@
 import Home from "./Menu"
+
 function Home(){
     return (
         <div>
