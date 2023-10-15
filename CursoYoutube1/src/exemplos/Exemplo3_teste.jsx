@@ -1,11 +1,12 @@
-import Menu from "./Menu"
-import Exemplo3 from "../exemplos/Exemplo3"
+import Menu from "../pages/Menu"
+import Exemplo3 from "./Exemplo3"
 
 function Exemplo3_teste(){
   return (
     <div>
-      <h1>Exemplo 1</h1>
-      <Menu />
+      
+      <Menu titulo={"Exemplo 3"} />
+
       <Exemplo3 cor="red"  />
       <Exemplo3 cor="blue" />
       <Exemplo3 cor="orangered"/>
