@@ -1,10 +1,11 @@
-import Home from "./Menu"
+import Menu from "./Menu"
 
 function Home(){
     return (
         <div>
-            <h1>Home</h1>
-            <Menu />
+            <h1>Home do Curso de React para Iniciantes</h1>
+            <Menu />  
+               
         </div>
 
     )
